@@ -8,8 +8,8 @@
     /* Indigo 600 */
     --secondary-hover: #4338CA;
     /* Indigo 700 */
-    --accent-color: #F59E0B;
-    /* Amber 500 */
+    --accent-color: #06B6D4;
+    /* Cyan 500 */
 
     --text-main: #1F2937;
     /* Gray 800 */
@@ -239,8 +239,21 @@ img {
 .logo {
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--primary-color);
     letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #111827 0%, #4F46E5 50%, #06B6D4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    transition: var(--transition-base);
+}
+
+.logo:hover {
+    background: linear-gradient(135deg, #4F46E5 0%, #06B6D4 50%, #111827 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transform: translateY(-1px);
 }
 
 .nav-links {
